@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f6fa;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+/* 🎬 Background Video */
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Dark overlay for better readability */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+
+.card {
+
+  width: 50%;
+  max-width: 700px;
+  background: grey;
+  background-position: center;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8); /* fixed */
+}
+
+h1 {
+  margin: 0 0 6px;
+}
+
+.subtitle {
+  margin: 0 0 16px;
+  color: #555;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.row.small {
+  justify-content: space-between;
+}
+
+input {
+  flex: 1;
+  padding: 12px 10px;
+  border: 1px solid #ddd; /* fixed */
+  border-radius: 10px;
+  outline: none;
+}
+
+button { /* fixed lowercase */
+  padding: 12px 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#addBtn {
+  background: #2563eb;
+  color: white;
+}
+
+.ghost {
+  background: #eef2ff;
+}
+
+.danger {
+  background: #ef4444;
+  color: white;
+}
+
+.stats {
+  display: flex; /* fixed */
+  justify-content: space-between;
+  padding: 10px 4px;
+  color: #333;
+  font-weight: bold;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center; /* fixed */
+  justify-content: space-between;
+  gap: 10px;
+  border: 1px solid #eee;
+  padding: 10px 12px;
+  margin-top: 10px;
+}
+
+.item .left {
+  display: flex;
+  align-items: center; /* fixed */
+  gap: 10px;
+}
+
+.item.done .text {
+  text-decoration: line-through; /* fixed */
+}
+
+.smallBtn {
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: #111827; /* fixed */
+  color: white; /* improved readability */
+}
