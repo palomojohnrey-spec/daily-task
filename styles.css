@@ -5,11 +5,15 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f5f6fa;
-  display: grid;
-  place-items: center;
+
+  display: flex;              /* change from grid to flex */
+  justify-content: center;    /* horizontal center */
+  align-items: center;        /* vertical center */
+  min-height: 100vh;          /* full screen height */
   padding: 20px;
+  position: relative;
 }
+
 /* 🎬 Background Video */
 .bg-video {
   position: fixed;
